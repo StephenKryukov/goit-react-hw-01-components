@@ -1,0 +1,40 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  box-shadow: 6px 6px 3px #aaaaaa;
+  border-radius: 6px;
+  background: linear-gradient(to top right, #eeeeee, #74bef7);
+  margin-bottom: 20px;
+}
+
+.statusOn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.statusOff {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff0000;
+}
+
+.avatar {
+  width: 100px;
+  height: auto;
+  display: block;
+  padding: 5px;
+  border: 3px solid darkslateblue;
+  border-radius: 6px;
+}
+
+.name {
+  margin: 10px;
+  font-size: 32px;
+}
