@@ -6,10 +6,10 @@ export default function Statistics({ title, stats }) {
     <section className={s.statistics}>
       {title && <h2 className={s.title}>{title}</h2>}
       <ul className={s.list}>
-        {stats.map(item => (
-          <li className={s.item} key={item.id}>
-            <span className={s.label}>{item.label}</span>
-            <span className={s.percentage}>{item.percentage}%</span>
+        {stats.map(({ id, label, percentage }) => (
+          <li className={s.item} key={id}>
+            <span className={s.label}>{label}</span>
+            <span className={s.percentage}>{percentage}%</span>
           </li>
         ))}
       </ul>
@@ -18,7 +18,7 @@ export default function Statistics({ title, stats }) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
